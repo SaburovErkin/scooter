@@ -7,11 +7,15 @@
         padding-bottom: 22px;
     }
     
+    &__wrapper {
+        width: 940px;
+    }
+    
     &__nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 940px;
+        
     }
     
     &__logo {
@@ -41,7 +45,7 @@
         cursor: pointer;
         padding: 14px 39px;
         background-color: $yellow;
-        border: 1.5px solid white;
+        border: 1.5px solid rgba(255, 255, 255, 0);
         
         &:hover {
             background-color: #fff;
@@ -51,10 +55,6 @@
         
         &:active {
             opacity: 0.5;
-        }
-
-        .button {
-            float: 1;
         }
     }
     
@@ -78,6 +78,24 @@
     &__burger {
         display: none;
     }
+}
+
+@media only screen and (max-width:740px) {
+    .header{
+        &__btn {
+            font-size: 13px;
+            line-height: 23px;
+        }
+    } 
+}
+
+@media only screen and (max-width:718px) {
+    .header{
+        &__btn {
+            font-size: 10px;
+            line-height: 20px;
+        }
+    } 
 }
 
 @media only screen and (max-width:700px) {
@@ -114,7 +132,7 @@
             bottom: 32px;
             left: 32px;
             border: 1.5px solid #333A44;
-
+            
             &:hover {
                 background-color: #fff;
                 color: $yellow;
@@ -178,12 +196,12 @@
 }
 
 @media only screen and (max-width:500px) {
-
+    
     .header {
-
+        
         &__logo {
             margin-left: 30%;
         }
     }
-
+    
 }

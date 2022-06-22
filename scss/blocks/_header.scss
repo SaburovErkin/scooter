@@ -9,6 +9,7 @@
     
     &__wrapper {
         width: 940px;
+        z-index: +999;
     }
     
     &__nav {
@@ -101,9 +102,8 @@
 @media only screen and (max-width:700px) {
     .header {
         
-        &__inner-wrapper {
-            position: relative;
-        }
+        position: relative;
+        
         
         &__container {
             padding-top: 22px;

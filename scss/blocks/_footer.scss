@@ -1,8 +1,6 @@
 .footer {
     background-color: #333A44;
     
-    &__inner-wrapper {
-    }
     
     &__container {
         display: flex;
@@ -19,22 +17,10 @@
         gap: 58px;
     }
     
-    &__logo {
-    }
-    
-    &__logo-link {
-    }
-    
-    &__nav {
-    }
-    
     &__list {
         display: flex;
         align-items: center;
         gap: 32px;
-    }
-    
-    &__item {
     }
     
     &__item-link {
@@ -50,25 +36,37 @@
         }
     }
     
-    &__right-nav {
-    }
-    
     &__right-list {
         display: flex;
         align-items: center;
         gap: 24px;
     }
-    
-    &__right-item {
-    }
-    
-    &__right-link {
-    }
-    
-    &__link-img {
-    }
 }
-.container {
-}
-.footer {
+
+
+@media only screen and (max-width:640px) {
+    .footer {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 64px;
+            padding-bottom: 88px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 42px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 85px;
+        }
+    }
 }

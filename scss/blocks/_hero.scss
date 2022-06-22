@@ -2,7 +2,8 @@
     background-color: $darknavy;
     
     &__bg-container {
-        background-image: url(./../../images/hero_bgi.jpg);
+        z-index: -999;
+        background-image: url(./../images/hero_bgi.jpg);
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;

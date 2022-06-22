@@ -1,0 +1,18 @@
+@mixin button {
+    font-family: 'SpaceMono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 183px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 14px 39px;
+    background-color: $yellow;
+    border: 1.5px solid rgba(255, 255, 255, 0);
+}

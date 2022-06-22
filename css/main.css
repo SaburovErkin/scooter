@@ -356,7 +356,9 @@ template {
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,
@@ -375,6 +377,14 @@ body {
   font-family: 'LexendDeca';
   font-style: normal;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 img {
@@ -395,6 +405,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -412,7 +428,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  overflow: hidden;
 }
 
 .hero__bg-container {
@@ -506,6 +521,10 @@ h1, h2, h3, h4, h5, h6, p {
   color: #939CAA;
   text-align: center;
   min-width: 51px;
+}
+
+.header__item-link:hover {
+  color: #FCB72B;
 }
 
 .header__burger {
@@ -634,6 +653,12 @@ h1, h2, h3, h4, h5, h6, p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero__bg-container {
+    background-image: url(./../images/hero_bgi@2x.png);
+  }
 }
 
 .hero__wrapper {
@@ -1531,6 +1556,10 @@ h1, h2, h3, h4, h5, h6, p {
       -ms-flex-align: center;
           align-items: center;
   gap: 24px;
+}
+
+.footer__link-img:hover path {
+  fill: white;
 }
 
 @media only screen and (max-width: 640px) {

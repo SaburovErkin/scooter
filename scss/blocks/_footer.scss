@@ -41,6 +41,14 @@
         align-items: center;
         gap: 24px;
     }
+
+    &__link-img {
+        &:hover {
+            path {
+                fill: white;
+            }
+        }
+    }
 }
 
 

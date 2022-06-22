@@ -74,6 +74,10 @@
         color: $dimgrey;
         text-align: center;
         min-width: 51px;
+
+        &:hover {
+            color: $yellow;
+        }
     }
     
     &__burger {

@@ -10,6 +10,19 @@
         background-position: center;
     }
     
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        
+        &__bg-container {
+            background-image: url(./../images/hero_bgi@2x.png);
+        }
+    }
+    
     &__wrapper {
         max-width: 500px;
         padding-top: 153px;
@@ -173,7 +186,7 @@
 
 @media only screen and (max-width:500px) {
     .hero {
-
+        
         &__text {
             
             &::after {
@@ -201,7 +214,7 @@
 @media only screen and (max-width:377px) {
     .hero {
         height: 650px;
-
+        
         &__wrapper {
             padding: 115px 32px;
             max-width: 311px;
@@ -213,7 +226,7 @@
             line-height: 40px;
             letter-spacing: -1.78571px;
         }
-
+        
         &__text {
             
             &::after {
